@@ -1,0 +1,114 @@
+@font-face {
+    font-family:NovaFlat;
+    src: url(/flask_dir/static/Fontz/NovaFlat-Regular.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: NovaFlat;
+}
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/i-am_nah--S4OsO0c6Ts-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+.main{
+    width: 60%;
+    background-color: rgb(154, 149, 149, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-grid{
+    width: max-content;
+    height: 500px;
+    margin-top: 3rem;
+    color: whitesmoke;
+}
+.main .main-grid header{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+.main .main-grid .header-again{
+    margin-top: 5rem;
+    font-size: 1.7rem;
+}
+.cover{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(204, 42, 204, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content:center;
+    padding-top: 5rem;
+}
+.contact-page{
+    width: 55%;
+    height: max-content;
+}
+.contact-page h1{
+    font-family: NovaFlat;
+    color: wheat;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-page .flex-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contact-page .flex-contact .company{
+    width: 60%;
+    margin-right: .3rem;
+}
+.contact-page .flex-contact .phone{
+    width: 40%;
+}
+.contact-page input{
+    width: 100%;
+    height: 30px;
+    padding: .5rem;
+    margin: .5rem 0;
+    background-color: rgb(243, 211, 242, 0.1);
+    border: 1px solid;
+    color: wheat;
+    font-family: NovaFlat;
+    font-size: .9rem;
+}
+.contact-page input[type="text"]::placeholder,
+.contact-page input[type="email"]::placeholder,
+.contact-page input[type="password"]::placeholder,
+.contact-page input[type="tel"]::placeholder {
+    color: wheat;
+}
+.contact-page textarea{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(243, 211, 242, 0.2);
+    color: wheat;
+    font-family: NovaFlat;
+    font-size: .9rem;
+}
+#textarea::placeholder {
+    color: wheat;
+}
+.contact-page .btn{
+    width: 150px;
+    height: 40px;
+    border-radius: .3rem;
+    background-color: violet;
+    border: 1px solid wheat;
+}
+
+
+
+
+

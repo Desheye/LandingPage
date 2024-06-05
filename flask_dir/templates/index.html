@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="main">
+        <div class="main-grid">
+            <header>
+                imagine solutions
+            </header>
+
+            <div class="header-again">
+                <h1>big ideas,</h1>
+                <h1>creative deck,</h1>
+                <h1>new technology.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="cover">
+        <div class="contact-page">
+            <h1>Contact Us</h1>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="alert alert-success">
+                        {% for category, message in messages %}
+                            <p>{{ message }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.username.label(class="form-control-label") }}
+                    {{ form.username(class="form-control") }}
+                </div>
+                <div class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {{ form.email(class="form-control") }}
+                </div>
+                <div class="form-group flex-contact">
+                    <div class="company">
+                        {{ form.company.label(class="form-control-label") }}
+                        {{ form.company(class="form-control") }}
+                    </div>
+                    <div class="phone">
+                        {{ form.phone.label(class="form-control-label") }}
+                        {{ form.phone(class="form-control") }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    {{ form.message.label(class="form-control-label") }}
+                    {{ form.message(class="form-control") }}
+                </div>
+                <div class="form-group">
+                    {{ form.submit(class="btn btn-primary") }}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="grid-wrapper">
+        <h1>we think big</h1>
+        <div class="underline"></div>
+        <div class="statement">
+            Lorem ipsum dolor.
+            sit amet consectetur adipisicing elit. Fuga omnis consequatur natus perferendis
+            laboriosam aspernatur nostrum magnam unde fugiat repudiandae?
+        </div>
+    </div>
+
+    <div class="grid-wrapper2">
+        <div class="pitch">
+            <header>what we do best</header>
+        </div>
+        <div class="content-grid">
+            <div class="website-grid">
+                <img src="../static/img/webdev.png" alt="">
+                <img src="/img/webdev.png" alt="">
+                <p>websites</p>
+            </div>
+
+            <div class="website-grid">
+                <img src="../static/img/branding.png" alt="">
+                <p>branding</p>
+            </div>
+
+            <div class="website-grid">
+                <img src="../static/img/content-strategy.png" alt="">
+                <p>content strategy</p>
+            </div>
+
+            <div class="website-grid">
+                <img src="../static/img/inbound.png" alt="">
+                <p>inbound marketing</p>
+            </div>
+
+            <div class="website-grid">
+                <img src="../static/img/productdev.png" alt="">
+                <p>product development</p>
+            </div>
+        </div>
+        <div class="underline2"></div>
+        <div class="statement2">
+            Lorem ipsum dolor.
+            sit amet consectetur adipisicing elit. Fuga omnis consequatur natus perferendis
+            laboriosam aspernatur nostrum magnam unde fugiat repudiandae?
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
