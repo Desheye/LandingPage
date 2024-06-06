@@ -1,0 +1,63 @@
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile phones */
+    body {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+        overflow-x: hidden;
+        width: 100%; /* Prevent horizontal scrolling */
+        height: auto;
+        background-color: rgb(140, 6, 140);
+    }
+    .section {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        padding-bottom: 1rem;
+        
+    }
+    .grid-wrapper{
+        width: 100%;
+        visibility: hidde;
+        top: 3px;
+        margin-bottom: 3px;
+    }
+    .grid-wrapper .underline{
+        border: 1px solid violet;
+        width: 90%;
+    }
+    .grid-wrapper .statement{
+        width: 90%;
+        height: fit-content;
+        font-weight: 400;
+    }
+    .grid-wrapper2{
+        height: 100%;
+    }
+    .grid-wrapper2 .statement {
+        width: 350px;
+    }
+    .grid-wrapper2 .pitch {
+        width: 300px;
+        height: 100%;
+    }
+    .content-grid {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .grid-wrapper2 .content-grid .website-grid img {
+        width: 50px;
+    }
+}
+.underline2{
+    border: 1px solid wheat;
+    width: 80%;
+    margin-top: 2rem;
+    visibility: hidden;
+}
+.grid-wrapper2 .statement2{
+    color: wheat;
+    width: 500px;
+    text-align: center;
+    margin: 2rem;
+    visibility: hidden;
+}

@@ -1,0 +1,48 @@
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile phones */
+    /* For example: */
+    body {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    }
+    .container-fluid{
+        width: 100%;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .main{
+        width: 100%;
+        background-color: rgb(154, 149, 149, 0.7);
+        z-index: 3;
+        overflow: hidden;
+    }
+    .main .main-grid header{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-family:NovaFlat;
+        margin-top: 1rem;
+    }
+    .main-grid{
+        color: rgb(237, 174, 14);
+        width: 90%;
+    }
+    .cover{
+        background-color: rgb(243, 33, 236, .5);
+        z-index: 2;
+    }
+    .cover .contact-button{
+        width: 100px;
+        border: 2px solid gold;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        border-radius: .5rem;
+        background-color: orangered;
+        color: wheat;
+        padding: .5rem;
+        font-weight: 600;
+    }
+    .contact-page{
+        visibility: hidden;
+    }
+}

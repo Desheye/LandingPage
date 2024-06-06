@@ -1,6 +1,6 @@
 @font-face {
     font-family:NovaFlat;
-    src: url(/flask_dir/static/Fontz/NovaFlat-Regular.woff2);
+    src: url(../Fontz/NovaFlat-Regular.woff2);
 }
 *{
     margin: 0;
@@ -16,6 +16,7 @@
     background-size: cover;
     display: flex;
     position: relative;
+    font-family:NovaFlat;
 }
 .main{
     width: 60%;
@@ -34,6 +35,7 @@
     margin-top: 5rem;
     margin-bottom: 3rem;
     font-size: 2.5rem;
+    font-family:NovaFlat;
 }
 .main .main-grid .header-again{
     margin-top: 5rem;
